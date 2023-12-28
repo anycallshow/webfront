@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 아프리카TV</title>
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="afreecaTV.css">
+</head>
+<body>
+    
+    
+    <div class="member">
+        <a href="https://www.afreecatv.com/">
+            <img class="logo" src="afreecaTV.png">
+        </a>
+
+        <form action="#">
+            <div class="field">
+                <b>아이디</b>
+                <input type="text" id="userId">
+                <p id="pId"></p>
+            </div>
+            <div class="field">
+                <b>비밀번호</b>
+                <input class="userpw" type="password" id="userPwd1">
+                <p id="pwText">문자, 숫자, 기호를 조합하여 10~15자로 입력해주세요.</p>
+            </div>
+            <div class="field">
+                <b>비밀번호 재확인</b>
+                <input class="userpw-confirm" type="password" id="userPwd2">
+                <p id="pPw"></p>
+            </div>
+            <div class="field">
+                <b>이름</b>
+                <input type="text" id="userName">
+                <p id="pName"></p>
+            </div>
+
+            <div class="field birth">
+                <b>생년월일</b>
+                <div>
+                    <input type="number" placeholder="년(4자)" id="year">         
+                    <select id="months">
+                        <option value="">월</option>
+                        <option value="">1월</option>
+                        <option value="">2월</option>
+                        <option value="">3월</option>
+                        <option value="">4월</option>
+                        <option value="">5월</option>
+                        <option value="">6월</option>
+                        <option value="">7월</option>
+                        <option value="">8월</option>
+                        <option value="">9월</option>
+                        <option value="">10월</option>
+                        <option value="">11월</option>
+                        <option value="">12월</option>
+                    </select>
+                    <input type="number" placeholder="일" id="day">
+                </div>
+                <p id="birth"></p>
+            </div>
+
+            <div class="field gender">
+                <b>성별</b>
+                <div>
+                    <label><input type="radio" name="gender">남자</label>
+                    <label><input type="radio" name="gender">여자</label>
+                </div>
+                <p id="pGender"></p>
+            </div>
+
+            <div class="field">
+                <b>이메일</b>
+                <input type="email" id="email">
+                <p id="pEmail"></p>
+            </div>
+            
+            <div class="field tel-number">
+                <b>휴대폰</b>
+                <input type="tel" placeholder="'-'없이 입력" id="phone">
+                <p id="pPhone"></p>
+            </div>
+            <div class="next">
+                <button><input type="submit" value="이전"></button>
+                <button onclick="signUp()"><input type="submit" value="다음"></button>
+            </div>
+        </form>
+    </div>
+    
+
+    <div class="member-footer">
+        <hr>
+        <div>
+            <a href="#">회사소개</a>
+            <a href="#">서비스 소개</a>
+            <a href="#">인재채용</a>
+            <a href="#">광고안내</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">청소년보호정책</a>
+            <a href="#">운영정책</a>
+            <a href="#">권리침해신고센터</a>
+            <a href="#">고객센터</a>
+            <a href="#">Developers</a>
+            <a href="#">주요서비스</a>
+        </div>
+        <span><a href="#">ⓒ AfreecaTV Corp.</a></span>
+    </div>
+</body>
+</html>

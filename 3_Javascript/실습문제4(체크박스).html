@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제4 체크박스</title>
+
+    <style>
+        #area2{
+            margin-top: 20px;
+        }
+
+        #content{
+            height: 200px;;
+            border: 2px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area1">
+        <fieldset>
+            <legend>취미</legend>
+            <input type="checkbox" name="selectall" value="" onclick="selectAll(this)">전체선택
+            <input type="checkbox" name="kategorie" value="종합" onclick="checkSelectAll()">종합
+            <input type="checkbox" name="kategorie" value="소설" onclick="checkSelectAll()">소설
+            <input type="checkbox" name="kategorie" value="시/에세이" onclick="checkSelectAll()">시/에세이
+            <input type="checkbox" name="kategorie" value="경제/경영" onclick="checkSelectAll()">경제/경영
+            <input type="checkbox" name="kategorie" value="자기계발" onclick="checkSelectAll()">자기계발
+            <input type="checkbox" name="kategorie" value="아동" onclick="checkSelectAll()">아동 <br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="checkbox" name="kategorie" value="여행" onclick="checkSelectAll()">여행 
+            <input type="checkbox" name="kategorie" value="과학" onclick="checkSelectAll()">과학 
+            <input type="checkbox" name="kategorie" value="역사/문학 " onclick="checkSelectAll()">역사/문학 
+            <input type="checkbox" name="kategorie" value="외국어" onclick="checkSelectAll()">외국어 &ensp;
+            <input type="checkbox" name="kategorie" value="컴퓨터" onclick="checkSelectAll()">컴퓨터 &ensp;&ensp;
+            <input type="checkbox" name="kategorie" value="만화" onclick="checkSelectAll()">만화
+        </fieldset>
+    </div>
+
+    <div id="area2">
+        <button type="button" id="btn">카테고리 선택</button>
+        <div id="content"></div>
+    </div>
+    
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            const kategorieList = document.getElementsByName("kategorie");
+            let str = "";
+
+            for (let i=0; i<kategorieList.length; i++) {
+
+                if(kategorieList[i].checked){
+                    str += kategorieList[i].value + "  ";
+                }
+            }
+            document.getElementById("content").innerHTML = str;
+        })
+
+        function checkSelectAll()  {
+            const checkboxes = document.querySelectorAll('input[name="kategorie"]');
+            const checked = document.querySelectorAll('input[name="kategorie"]:checked');
+            const selectAll = document.querySelector('input[name="selectall"]');
+            
+            if(checkboxes.length === checked.length)  {
+                selectAll.checked = true;
+            }else {
+                selectAll.checked = false;
+            }
+
+            }
+
+            function selectAll(selectAll)  {
+            const checkboxes = document.getElementsByName('kategorie');
+            
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAll.checked
+            })
+
+            }
+    </script>
+</body>
+</html>

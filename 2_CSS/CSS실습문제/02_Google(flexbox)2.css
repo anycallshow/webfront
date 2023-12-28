@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.main{
+    margin-top: 10px;
+    padding-right: 9px;
+    display: flex;
+    align-items: baseline;
+}
+
+.mainitems button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.mainitems2 button{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: darkslategrey;
+    color: white;
+}
+
+.mainitem1 button:hover{
+    text-decoration: underline;
+}
+
+.mainitems{
+    margin: 10px;
+    color: white;
+}
+
+article{
+    text-align: center;
+}
+
+article>h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+.inputwithicon{
+    border-radius: 30px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.inputwithicon input[type=search]{
+    border-radius: 35px;
+    width: 550px;
+    height: 45px;
+    padding-left: 55px;
+}
+
+.first{
+    font-size: 14px;
+    color: #5f6367;
+    position: relative;
+    left: 40px;
+    top: 1px;
+}
+
+.second{
+    color: violet;
+}
+
+.inputwithicon button{
+    position: relative;
+    right: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.footercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.footeritemadd{
+    display: flex;
+}
+
+.footeritem{
+    height: 100px;
+    width: 100px;
+}
+
+.footeritem:hover{
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.3);
+}
+
+.footeritem2add{
+    display: flex;
+}
+
+.footeritem2{
+    height: 100px;
+    width: 100px;
+}
+
+.footeritem2:hover{
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.3);
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제3 로그인</title>
+
+    <style>
+        #form{
+            display: none;
+        }
+        
+        b{
+            display: inline-block;
+            width: 80px;
+        }
+
+        .btn2{
+            width: 100px;
+            height: 40px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-color: white;
+        }
+
+        .btn2:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>로그인을 클릭하면 로그인 폼이 나타납니다.</h1> 
+    <button id="btn1">로그인</button>
+
+    <form action="../4_jQuery/08_effect메소드1.html" id="form">
+        <fieldset class="fs">
+            <legend>로그인</legend>
+            <h1>Login</h1>
+            <b>Email</b>
+            <input type="email" id="email" placeholder="Enter Email"> <br>
+            <b>Password</b>
+            <input type="password" id="pw" placeholder="Enter Password"> <br>
+            <button type="submit" id="loginBtn" class="btn2">Login</button>
+            <button type="reset" id="colseBtn" class="btn2">Close</button>
+        </fieldset>
+    </form>
+    
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function(){
+            document.getElementById("form").style.display = "block";
+        })
+        document.getElementById("colseBtn").addEventListener("click", function(){
+            document.getElementById("form").style.display = "none";
+        })
+    </script>
+</body>
+</html>

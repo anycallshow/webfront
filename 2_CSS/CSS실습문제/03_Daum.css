@@ -1,0 +1,66 @@
+body{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #222;
+    letter-spacing: -1px;
+
+    background: #fff;
+    direction: ltr;
+    -webkit-text-size-adjust: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: block;
+}
+
+#daumWarp{
+    position: relative;
+    min-width: 1080px;
+}
+
+div{
+    border: 1px solid black;
+}
+
+/* 1행 */
+.d_head{
+    border-bottom: 1px solid #ececec;
+}
+
+.d_head .inner_head{
+    position: relative;
+    z-index: 1;
+    width: 1080px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+
+/* 2행 */
+.d_service{
+    border-bottom: 1px solid #888;
+}
+
+.d_service .inner_service{
+    position: relative;
+    width: 990px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+/* 3행 */
+.advert_google{
+    height: 81px;
+    margin-left: 0!important;
+}
+
+.advert_tmp{
+    float: left;
+    position: relative;
+    width: 990px;
+    height: 120px;
+    margin-right: 35px;
+}
+
+
