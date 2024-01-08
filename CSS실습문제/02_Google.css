@@ -1,0 +1,57 @@
+
+
+.div-1{
+    width: 35%;
+    height: 100%;  
+    float: left;
+}
+
+.div-2{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.div-3{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.div-4{
+    width: 30%;
+    height: 100%;  
+    float: left;
+}
+
+.div-5{
+    width: 100%;
+    height: 100%;  
+    float: left;
+}
+
+.row-2{
+    height: 15%;
+}
+
+.row-1{
+    height: 10%;
+}
+
+.container{
+    width: 1500px;
+    height: 750px;
+}
+
+.container-2{
+    width: 1500px;
+    height: 50px;
+}
+
+.bg-1{ background-color: red;}
+.bg-2{ background-color: orange;}
+.bg-3{ background-color: yellow;}
+.bg-4{ background-color: green;}
+.bg-5{ background-color: lightblue;}
+.bg-6{ background-color: navy;}
+.bg-7{ background-color: violet;}

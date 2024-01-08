@@ -1,0 +1,384 @@
+* { box-sizing: border-box; }
+
+/* section{ border: 1px solid black;}  */
+
+body{margin: 0;}
+
+main{
+    width: 1300px;
+    height: 1500px;
+    margin: auto;
+}
+
+header{
+    height: 130px;
+    display: flex;
+    background-color: rgb(246, 245, 239);
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    width: 1000px;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 70%;
+}
+
+nav > nav > ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 30%;
+}
+
+nav > nav > ul{
+    justify-content: right;
+    padding-right: 115px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
+
+nav > nav > ul > span{
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.1);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+nav > nav > ul > li > a{
+    display: block;
+    height: 30%;
+
+    text-align: center;
+    padding: 7px;
+    padding-left: 5px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition-duration: 0.1s;
+}
+
+
+nav > nav > ul > li > a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(246, 245, 239);
+}
+
+nav > li{
+    flex : 0 1 150px;
+}
+
+nav a{
+    display: block;
+    height: 81%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition-duration: 0.1s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: green;
+    background-color: rgb(44, 42, 41);
+}
+
+header > section{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#starbucks{
+    width: 110px;
+    height: auto;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+#icon{
+    background: white;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    width: 35px;
+    border-radius: 10%;
+    border-top: 10px;
+    cursor: pointer;
+}
+
+
+.content{
+    height: 600px;
+    display: flex;
+    background-color: rgb(200, 29, 48);
+}
+
+.content > section{
+    width: 30%;
+    height: 100%;
+}
+
+.content-1 { 
+    flex-basis:  40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.content-1 > button {
+    width: 150px;
+    height: 45px;
+    background-color: rgb(200, 29, 48);
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10%;
+    transition-duration: 1s;
+}
+
+.content-1 > button:hover{
+    background-color: white;
+    text-decoration: underline;
+    color: rgb(200, 29, 48);
+}
+
+.content-2 { flex-basis: 70%; }
+
+
+
+
+.gong{
+    height: 80px;
+    display: flex;
+}
+
+.content-3 { 
+    flex-basis: 55%; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content-3 > span{
+    font-size: 20px;
+    padding-left: 150px;
+}
+
+.content-3 > a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-right: 150px;
+}
+
+.content-3 > a:hover{
+    text-decoration: underline;
+}
+
+.content-3 > button{
+    background-color: black;
+    border: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.content-4 { 
+    flex-basis: 45%; 
+    background-color: rgb(245, 244, 239);
+    text-align: center;
+    padding-top: 17px;
+}
+
+.content-4 > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.content-4 > button{
+    font-size: 30px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-top: 3px;
+}
+
+
+.rewardidpw{
+    background-color: rgb(30, 57, 50);
+    height: 230px;
+    display: flex;
+}
+
+.rewardimg{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.id-pw-area{
+    width: 70%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.inputidpw{
+    height: 60%;
+    padding: 5px;
+}
+
+.gift{
+    height: 40%;
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+    padding: 5px;
+    padding-bottom: 3px;
+    padding-top: 13px;
+}
+
+.gift > button {
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    margin-left: 70px;
+    text-align: center;
+    background-color: rgb(30, 57, 50);
+    color: white;
+    border: 3px solid white;
+    border-radius: 5%;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.gift > button:hover{
+    cursor: pointer;
+}
+
+.text2{
+    color: white;
+    font-size: 14px;
+    line-height: 1px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+
+.text1{
+    font-weight: 900;
+    line-height: 1px;
+}
+
+.rewardpic{
+    height: 150px;
+    padding-left: 90px;
+}
+
+.line1{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.line1-1{
+    font-weight: 900;
+}
+
+.line2{
+    line-height: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.line2-1{
+    font-weight: 900;
+}
+
+
+#chris{
+    width: 300px;
+    height: 300px;
+}
+
+.etc{
+    height: 500px;
+    background-color: rgb(200, 29, 48);
+}
+
+.imagehome{
+    width: 100%;
+}
+
+.sub1{
+    position: fixed;
+    top: 180px;
+    right: 450px;
+}
+
+.sub2{
+    position: fixed;
+    top: 300px;
+    right: 450px;
+}
+
+.subbt1{
+    border-radius: 10%;
+    border: 1px solid rgb(35, 46, 37);
+    background-color: rgb(35, 46, 37);
+}
+
+.subbt2{
+    border-radius: 10%;
+    border: 1px solid rgb(8, 27, 37);
+    background-color: rgb(8, 27, 37);
+}
+
+.subbt1:hover{
+    cursor: pointer;
+}
+
+.subbt2:hover{
+    cursor: pointer;
+}
+
+.menucoffee:hover{
+    transition-property: 2s;
+}
+
+.menucoffee:hover .coffeeme{
+    height: 300px;
+    transition-duration: 1s;
+}
+
+.coffee{
+    height: 0px;
+    overflow: hidden;
+}
+
+.coffeeme{
+    height: 350px;
+    background-color: rgb(44, 42, 41);
+}
