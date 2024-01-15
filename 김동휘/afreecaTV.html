@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 | 아프리카TV</title>
-    <script src="signup.js"></script>
+    
     <link rel="stylesheet" href="afreecaTV.css">
 </head>
 <body>
@@ -15,26 +15,26 @@
             <img class="logo" src="afreecaTV.png">
         </a>
 
-        <form action="#">
+        <form action="HwiTube.html" onsubmit="return signUpValidate()">
             <div class="field">
                 <b>아이디</b>
-                <input type="text" id="userId">
-                <p id="pId"></p>
+                <input type="text" id="userId" maxlength="15">
+                <p id="pId" class="text">영어/숫자 6~15글자 사이로 작성해주세요. </p>
             </div>
             <div class="field">
                 <b>비밀번호</b>
-                <input class="userpw" type="password" id="userPwd1">
-                <p id="pwText">문자, 숫자, 기호를 조합하여 10~15자로 입력해주세요.</p>
+                <input class="userpw" type="password" id="userPwd1" maxlength="15">
+                <p id="pwText" class="text">문자, 숫자, 기호(!,@,#,_,-)를 조합하여 10~15자로 입력해주세요.</p>
             </div>
             <div class="field">
                 <b>비밀번호 재확인</b>
-                <input class="userpw-confirm" type="password" id="userPwd2">
-                <p id="pPw"></p>
+                <input class="userpw-confirm" type="password" id="userPwd2" maxlength="15">
+                <p id="pPw" class="text"></p>
             </div>
             <div class="field">
                 <b>이름</b>
-                <input type="text" id="userName">
-                <p id="pName"></p>
+                <input type="text" id="userName" maxlength="15">
+                <p id="pName" class="text">문자, 띄어쓰기 포함해서 2~15글자 사이에 이름을 입력해주세요.</p>
             </div>
 
             <div class="field birth">
@@ -42,23 +42,23 @@
                 <div>
                     <input type="number" placeholder="년(4자)" id="year">         
                     <select id="months">
-                        <option value="">월</option>
-                        <option value="">1월</option>
-                        <option value="">2월</option>
-                        <option value="">3월</option>
-                        <option value="">4월</option>
-                        <option value="">5월</option>
-                        <option value="">6월</option>
-                        <option value="">7월</option>
-                        <option value="">8월</option>
-                        <option value="">9월</option>
-                        <option value="">10월</option>
-                        <option value="">11월</option>
-                        <option value="">12월</option>
+                        <option value="월" selected>월</option>
+                        <option value="1월">1월</option>
+                        <option value="2월">2월</option>
+                        <option value="3월">3월</option>
+                        <option value="4월">4월</option>
+                        <option value="5월">5월</option>
+                        <option value="6월">6월</option>
+                        <option value="7월">7월</option>
+                        <option value="8월">8월</option>
+                        <option value="9월">9월</option>
+                        <option value="10월">10월</option>
+                        <option value="11월">11월</option>
+                        <option value="12월">12월</option>
                     </select>
                     <input type="number" placeholder="일" id="day">
                 </div>
-                <p id="birth"></p>
+                <p id="birth" class="text"></p>
             </div>
 
             <div class="field gender">
@@ -67,23 +67,23 @@
                     <label><input type="radio" name="gender">남자</label>
                     <label><input type="radio" name="gender">여자</label>
                 </div>
-                <p id="pGender"></p>
+                <p id="pGender" class="text"></p>
             </div>
 
             <div class="field">
                 <b>이메일</b>
                 <input type="email" id="email">
-                <p id="pEmail"></p>
+                <p id="pEmail" class="text"></p>
             </div>
             
             <div class="field tel-number">
                 <b>휴대폰</b>
-                <input type="tel" placeholder="'-'없이 입력" id="phone">
-                <p id="pPhone"></p>
+                <input type="tel" placeholder="'-'없이 입력" id="phone" maxlength="11">
+                <p id="pPhone" class="text"></p>
             </div>
             <div class="next">
-                <button><input type="submit" value="이전"></button>
-                <button onclick="signUp()"><input type="submit" value="다음"></button>
+                <button type="reset">이전</button>
+                <button type="submit">다음</button>
             </div>
         </form>
     </div>
@@ -106,5 +106,7 @@
         </div>
         <span><a href="#">ⓒ AfreecaTV Corp.</a></span>
     </div>
+
+    <script src="signup.js"></script>
 </body>
 </html>
