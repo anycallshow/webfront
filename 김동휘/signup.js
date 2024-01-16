@@ -127,12 +127,12 @@ userName.addEventListener("input", function(){
 })
 
 // 생년월일 유효성 검사
-const yera = document.getElementById("year");
+const year = document.getElementById("year");
 const months = document.getElementById("months");
 const day = document.getElementById("day");
 const birth = document.getElementById("birth");
 
-yera.addEventListener("input", function(){
+year.addEventListener("input", function(){
 
     if(this.value.trim().length == 0){
         this.style.border = "1px solid red";
